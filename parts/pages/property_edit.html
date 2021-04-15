@@ -1,0 +1,177 @@
+<div class="property-edit">
+  <div class="property-edit__info-block info-block">
+    <div class="property-edit__properties-list property-edit--list">
+      <div class="properties-list">
+        <div class="properties-list__title info-title">
+          <span>Свойства</span>
+        </div>
+        <div class="properties-list__data">
+          <div class="properties-list__property-item property-item">
+            <span>свойство 1123123212 23213 13132</span>
+          </div>
+          <div class="properties-list__property-item property-item">
+            <span>свойство 2</span>
+          </div>
+          <div class="properties-list__property property-item ">
+            <span>свойство 3</span>
+          </div>
+          <div class="properties-list__property property-item active">
+            <span>свойство 4</span>
+          </div>
+
+          <div class="properties-list__property property-item">
+            <span>свойство 4</span>
+          </div>
+
+          <div class="properties-list__property property-item">
+            <span>свойство 4</span>
+          </div>
+
+          <div class="properties-list__property property-item">
+            <span>свойство 4</span>
+          </div>
+
+          <div class="properties-list__property property-item">
+            <span>свойство 4</span>
+          </div>
+
+          <div class="properties-list__property property-item">
+            <span>свойство 4</span>
+          </div>
+
+          <div class="properties-list__property property-item">
+            <span>свойство 4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="property-edit__property-parameters property-edit--list">
+      <div class="parameters-list">
+        <div class="parameters-list__title info-title">
+          <span>Параметры</span>
+        </div>
+        <div class="parameters-list__data">
+          <div class="parameters-list__parameter-item parameter-item active">
+            <span>Параметер 1</span>
+          </div>
+          <div class="parameters-list__parameter-item parameter-item">
+            <span>Параметер 1</span>
+          </div>
+          <div class="parameters-list__parameter-item parameter-item">
+            <span>Параметер 1</span>
+          </div>
+          <div class="parameters-list__parameter-item parameter-item">
+            <span>Параметер 1</span>
+          </div>
+
+          <div class="parameters-list__parameter-item parameter-item">
+            <span>Параметер 1</span>
+          </div>
+
+          <div class="parameters-list__parameter-item parameter-item">
+            <span>Параметер 1</span>
+          </div>
+
+          <div class="parameters-list__parameter-item parameter-item">
+            <span>Параметер 1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="property-edit__property-info property-info"></div>
+
+    <div class="property-edit__form-menu form-menu">
+
+      <div class="form-menu__add-buttons">
+        <div class="form-menu__add-property-button form-menu__button active"><span>Добавить свойство</span></div>
+        <div class="form-menu__add-parameter-button form-menu__button"><span>Добавить параметр</span></div>
+      </div>
+
+      <div class="form-menu__edit-buttons">
+        <div class="form-menu__edit-property-button form-menu__button"><span>Изменить свойство</span></div>
+        <div class="form-menu__edit-parameter-button form-menu__button"><span>Изменить параметр</span></div>
+      </div>
+
+      <div class="form-menu__delete-buttons">
+        <div class="form-menu__delete-property-button form-menu__button"><span>Удалить свойство</span></div>
+        <div class="form-menu__delete-parameter-button form-menu__button"><span>Удалить параметр</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="property-edit__form-block">
+
+    <div class="form-block add-property-form hidden-block">
+      <div class="form-block__title">Добавить свойство</div>
+      <form action="" class="form form--flex">
+        <div class="form__fields">
+          <div class="form__field">
+            <label class="form-label" for="property_name">Наименование</label>
+            <input class="form-input" id="property_name" type="text" name="property_name">
+          </div>
+        </div>
+        <button class="form-button" type="submit">Сохранить</button>
+      </form>
+    </div>
+
+    <div class="form-block add-parameter-form ">
+      <div class="form-block__title">Добавить параметр</div>
+      <form action="" class="form form--flex">
+        <div class="form__fields">
+          <div class="form-block__item form__field">
+            <label class="form-block__label form-label" for="parameter_name">Наименование</label>
+            <input class="form-block__input form-input" id="parameter_name" type="text" name="parameter_name">
+          </div>
+          <div class="form-block__item form__field">
+            <label class="form-block__label form-label" for="parameter_type">Тип данных</label>
+            <select class="form-block__input form-input" name="parameter_type" id="parameter_type">
+              <option value="1">1</option>
+              <option value="1">1</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+        </div>
+        <button class="form-button" type="submit">Сохранить</button>
+      </form>
+    </div>
+
+    <div class="form-block change-property-form hidden-block">
+      <div class="form-block__title">Изменить свойство</div>
+      <form action="" class="form form--flex">
+        <div class="form__fields">
+          <div class="form__field">
+            <label class="form-label" for="property_name">Наименование</label>
+            <input class="form-input" id="property_name" type="text" name="property_name">
+          </div>
+        </div>
+        <button class="form-button" type="submit">Сохранить</button>
+      </form>
+    </div>
+
+    <div class="form-block edit-parameter-form hidden-block">
+      <div class="form-block__title">Изменить параметр</div>
+      <form action="" class="form form--flex">
+        <div class="form__fields">
+          <div class="form-block__item form__field">
+            <label class="form-block__label form-label" for="parameter_name">Наименование</label>
+            <input class="form-block__input form-input" id="parameter_name" type="text" name="parameter_name">
+          </div>
+          <div class="form-block__item form__field">
+            <label class="form-block__label form-label" for="parameter_type">Тип данных</label>
+            <select class="form-block__input form-input" name="parameter_type" id="parameter_type">
+              <option value="1">1</option>
+              <option value="1">1</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+        </div>
+        <button class="form-button" type="submit">Сохранить</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
