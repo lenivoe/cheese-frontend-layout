@@ -44,7 +44,7 @@
 
       <div class="property">
         <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="property__group">
+        <div class="property__group property-group">
           <div class="property__info">
             <div class="strain-form__item form__field">
               <label for="parameter_1" class="strain-form__label form-label">Параметр 1</label>
@@ -55,28 +55,31 @@
               <input id="parameter_224" type="text" class="strain-form__input form-input">
             </div>
           </div>
-          <div class="property__buttons-block">
-            <button class="property__delete-button delete-button">-</button>
-            <button class="property__add-button add-button">+</button>
+          <div class="property-group__buttons-block">
+            <button class="property-group__delete-button delete-button">-</button>
+            <button class="property-group__add-button add-button">+</button>
           </div>
         </div>
-        <div class="property__group">
+        <div class="property__group property-group">
           <div class="property__info">
             <div class="strain-form__item form__field">
               <label for="parameter_224" class="strain-form__label form-label">Параметр 3</label>
               <input id="parameter_224" type="text" class="strain-form__input form-input">
             </div>
           </div>
-          <div class="property__buttons-block">
-            <button class="property__delete-button delete-button">-</button>
-            <button class="property__add-button add-button">+</button>
+          <div class="property-group__buttons-block">
+            <button class="property-group__delete-button delete-button">-</button>
+            <button class="property-group__add-button add-button">+</button>
           </div>
+        </div>
+        <div class="property__buttons-block">
+          <button class="property__delete-button delete-button">Удалить свойство</button>
         </div>
       </div>
 
       <div class="property">
         <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="property__group">
+        <div class="property__group property-group">
           <div class="property__info">
             <div class="strain-form__item form__field">
               <label for="parameter_1" class="strain-form__label form-label">Параметр 1</label>
@@ -87,28 +90,31 @@
               <input id="parameter_224" type="text" class="strain-form__input form-input">
             </div>
           </div>
-          <div class="property__buttons-block">
-            <button class="property__delete-button delete-button">-</button>
-            <button class="property__add-button add-button">+</button>
+          <div class="property-group__buttons-block">
+            <button class="property-group__delete-button delete-button">-</button>
+            <button class="property-group__add-button add-button">+</button>
           </div>
         </div>
-        <div class="property__group">
+        <div class="property__group property-group">
           <div class="property__info">
             <div class="strain-form__item form__field">
               <label for="parameter_224" class="strain-form__label form-label">Параметр 3</label>
               <input id="parameter_224" type="text" class="strain-form__input form-input">
             </div>
           </div>
-          <div class="property__buttons-block">
-            <button class="property__delete-button delete-button">-</button>
-            <button class="property__add-button add-button">+</button>
+          <div class="property-group__buttons-block">
+            <button class="property-group__delete-button delete-button">-</button>
+            <button class="property-group__add-button add-button">+</button>
           </div>
+        </div>
+        <div class="property__buttons-block">
+          <button class="property__delete-button delete-button">Удалить свойство</button>
         </div>
       </div>
 
       <div class="property">
         <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="property__group">
+        <div class="property__group property-group">
           <div class="property__info">
             <div class="strain-form__item form__field">
               <label for="parameter_1" class="strain-form__label form-label">Параметр 1</label>
@@ -119,12 +125,12 @@
               <input id="parameter_224" type="text" class="strain-form__input form-input">
             </div>
           </div>
-          <div class="property__buttons-block">
-            <button class="property__delete-button delete-button">-</button>
-            <button class="property__add-button add-button">+</button>
+          <div class="property-group__buttons-block">
+            <button class="property-group__delete-button delete-button">-</button>
+            <button class="property-group__add-button add-button">+</button>
           </div>
         </div>
-        <div class="property__group">
+        <div class="property__group property-group">
           <div class="property__info">
             <div class="strain-form__item form__field">
               <label for="parameter_224" class="strain-form__label form-label">Параметр 1</label>
@@ -135,24 +141,37 @@
               <input id="parameter_224" type="text" class="strain-form__input form-input">
             </div>
           </div>
-          <div class="property__buttons-block">
-            <button class="property__delete-button delete-button">-</button>
+          <div class="property-group__buttons-block">
+            <button class="property-group__delete-button delete-button">-</button>
           </div>
         </div>
-        <div class="property__group">
+        <div class="property__group property-group">
           <div class="property__info">
             <div class="strain-form__item form__field">
               <label for="parameter_224" class="strain-form__label form-label">Параметр 1</label>
               <input id="parameter_224" type="text" class="strain-form__input form-input">
             </div>
           </div>
-          <div class="property__buttons-block">
-            <button class="property__add-button add-button">+</button>
+          <div class="property-group__buttons-block">
+            <button class="property-group__add-button add-button">+</button>
           </div>
+        </div>
+        <div class="property__buttons-block">
+          <button class="property__delete-button delete-button">Удалить свойство</button>
         </div>
       </div>
     </div>
 
+    <div class="add-property-block">
+      <label class="add-property-block__label" for="add-property-block__select">Все свойства</label>
+      <select class="add-property-block__select" name="property-data" id="add-property-block__select">
+        <option value="1">Рост в лакмусовом молоке</option>
+        <option value="2">свойство 2</option>
+        <option value="3">свойство 3</option>
+        <option value="4">свойство 4</option>
+      </select>
+      <button class="add-property-block__button add-button">добавить</button>
+    </div>
 
   </form>
   <div class="strain-adding__buttons form-buttons">
