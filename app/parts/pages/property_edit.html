@@ -83,20 +83,23 @@
     <div class="property-edit__property-info property-info"></div>
 
     <div class="property-edit__form-menu form-menu">
+      <button class="form-menu__edit-groups-button form-menu__button active">Группы параметров</button>
 
-      <div class="form-menu__add-buttons">
-        <div class="form-menu__add-property-button form-menu__button active"><span>Добавить свойство</span></div>
-        <div class="form-menu__add-parameter-button form-menu__button"><span>Добавить параметр</span></div>
+      <div class="form-menu__add-buttons form-menu__buttons-block">
+        <button class="form-menu__add-property-button form-menu__button">Добавить свойство</button>
+        <button class="form-menu__add-parameter-button form-menu__button">Добавить параметр</button>
       </div>
 
-      <div class="form-menu__edit-buttons">
-        <div class="form-menu__edit-property-button form-menu__button disabled-block"><span>Изменить свойство</span></div>
-        <div class="form-menu__edit-parameter-button form-menu__button"><span>Изменить параметр</span></div>
+      <div class="form-menu__edit-buttons form-menu__buttons-block">
+        <button class="form-menu__edit-property-button form-menu__button disabled-block">Изменить
+          свойство
+        </button>
+        <button class="form-menu__edit-parameter-button form-menu__button">Изменить параметр</button>
       </div>
 
-      <div class="form-menu__delete-buttons">
-        <div class="form-menu__delete-property-button form-menu__button"><span>Удалить свойство</span></div>
-        <div class="form-menu__delete-parameter-button form-menu__button"><span>Удалить параметр</span></div>
+      <div class="form-menu__delete-buttons form-menu__buttons-block">
+        <button class="form-menu__delete-property-button form-menu__button">Удалить свойство</button>
+        <button class="form-menu__delete-parameter-button form-menu__button">Удалить параметр</button>
       </div>
 
     </div>
@@ -117,7 +120,7 @@
       </form>
     </div>
 
-    <div class="form-block add-parameter-form ">
+    <div class="form-block add-parameter-form hidden-block">
       <div class="form-block__title">Добавить параметр</div>
       <form action="" class="form form--flex">
         <div class="form__fields">
@@ -129,8 +132,8 @@
             <label class="form-block__label form-label" for="parameter_type">Тип данных</label>
             <select class="form-block__input form-input" name="parameter_type" id="parameter_type">
               <option value="1">1</option>
-              <option value="1">1</option>
-              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
             </select>
           </div>
         </div>
@@ -138,13 +141,13 @@
       </form>
     </div>
 
-    <div class="form-block change-property-form hidden-block">
+    <div class="form-block edit-property-form hidden-block">
       <div class="form-block__title">Изменить свойство</div>
       <form action="" class="form form--flex">
         <div class="form__fields">
           <div class="form__field">
-            <label class="form-label" for="property_name">Наименование</label>
-            <input class="form-input" id="property_name" type="text" name="property_name">
+            <label class="form-label" for="new_property_name">Наименование</label>
+            <input class="form-input" id="new_property_name" type="text" name="property_name">
           </div>
         </div>
         <button class="form-button" type="submit">Сохранить</button>
@@ -156,12 +159,12 @@
       <form action="" class="form form--flex">
         <div class="form__fields">
           <div class="form-block__item form__field">
-            <label class="form-block__label form-label" for="parameter_name">Наименование</label>
-            <input class="form-block__input form-input" id="parameter_name" type="text" name="parameter_name">
+            <label class="form-block__label form-label" for="new_parameter_name">Наименование</label>
+            <input class="form-block__input form-input" id="new_parameter_name" type="text" name="parameter_name">
           </div>
           <div class="form-block__item form__field">
-            <label class="form-block__label form-label" for="parameter_type">Тип данных</label>
-            <select class="form-block__input form-input" name="parameter_type" id="parameter_type">
+            <label class="form-block__label form-label" for="new_parameter_type">Тип данных</label>
+            <select class="form-block__input form-input" name="parameter_type" id="new_parameter_type">
               <option value="1">1</option>
               <option value="1">1</option>
               <option value="1">1</option>
@@ -173,5 +176,109 @@
     </div>
 
   </div>
+  <div class="make-group-form">
+    <div class="make-group-form__top">
+      <div class="make-group-form__title">Группы параметров</div>
+      <button class="make-group-form__add-button add-button">+</button>
+    </div>
+    <div class="groups-list">
+      <div class="groups-list__group group">
+        <div class="group-parameters">
+          <div class="group-parameters__item parameter-item list-item">
+            <span>свойство 1123123212 23213 13132</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+          <div class="group-parameters__item list-item">
+            <span>свойство 2</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+          <div class="group-parameters__item list-item ">
+            <span>свойство 3</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+          <div class="group-parameters__item list-item">
+            <span>свойство 4</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="group__buttons">
+          <button class="group__add-button group-button add-button">добавить</button>
+          <button class="group__delete-button group-button delete-button">удалить</button>
+        </div>
+      </div>
+      <div class="groups-list__group group">
+        <div class="group-parameters">
+          <div class="group-parameters__item parameter-item list-item">
+            <span>свойство 1123123212 23213 13132</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+          <div class="group-parameters__item list-item">
+            <span>свойство 2</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+          <div class="group-parameters__item list-item ">
+            <span>свойство 3</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+          <div class="group-parameters__item list-item">
+            <span>свойство 4</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="group__buttons">
+          <button class="group__add-button group-button add-button">добавить</button>
+          <button class="group__delete-button group-button delete-button">удалить</button>
+        </div>
+      </div>
+      <div class="groups-list__group group">
+        <div class="group-parameters">
+          <div class="group-parameters__item parameter-item list-item">
+            <span>свойство 1123123212 23213 13132</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+          <div class="group-parameters__item list-item">
+            <span>свойство 2</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+          <div class="group-parameters__item list-item ">
+            <span>свойство 3</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+          <div class="group-parameters__item list-item">
+            <span>свойство 4</span>
+            <div class="parameter-item__buttons">
+              <button class="parameter-item__delete-button delete-button">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="group__buttons">
+          <button class="group__add-button group-button add-button">добавить</button>
+          <button class="group__delete-button group-button delete-button">удалить</button>
+        </div>
+      </div>
 
+    </div>
+  </div>
 </div>

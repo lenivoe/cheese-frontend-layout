@@ -1,132 +1,160 @@
 <div class="strain-adding">
   <form action="" class="strain-form form--position-block-center">
-    <div class="strain-form__item form__field">
-      <label for="gen-type_field" class="strain-form__label form-label">Род</label>
-      <select id="gen-type_field" class="strain-form__input form-input">
-        <option value="1">Пункт 1</option>
-        <option value="2">Пункт 2</option>
-        <option value="3">Пункт 3</option>
-      </select>
-    </div>
+    <div class="strain-form__general-info">
+      <div class="strain-form__item form__field">
+        <label for="gen-type_field" class="strain-form__label form-label">Род</label>
+        <select id="gen-type_field" class="strain-form__input form-input">
+          <option value="1">Пункт 1</option>
+          <option value="2">Пункт 2</option>
+          <option value="3">Пункт 3</option>
+        </select>
+      </div>
 
-    <div class="strain-form__item form__field">
-      <label for="bergey-type_field" class="strain-form__label form-label">Вид</label>
-      <select id="bergey-type_field" class="strain-form__input form-input">
-        <option value="1">Пункт 1</option>
-        <option value="2">Пункт 2</option>
-        <option value="3">Пункт 3</option>
-      </select>
-    </div>
+      <div class="strain-form__item form__field">
+        <label for="bergey-type_field" class="strain-form__label form-label">Вид</label>
+        <select id="bergey-type_field" class="strain-form__input form-input">
+          <option value="1">Пункт 1</option>
+          <option value="2">Пункт 2</option>
+          <option value="3">Пункт 3</option>
+        </select>
+      </div>
 
-    <div class="strain-form__item form__field">
-      <label for="name_field" class="strain-form__label form-label">Исходный индекс</label>
-      <input id="name_field" type="text" class="strain-form__input form-input">
-    </div>
+      <div class="strain-form__item form__field">
+        <label for="name_field" class="strain-form__label form-label">Исходный индекс</label>
+        <input id="name_field" type="text" class="strain-form__input form-input">
+      </div>
 
-    <div class="strain-form__item form__field">
-      <label for="data_field" class="strain-form__label form-label">Дата получения</label>
-      <input id="data_field" type="text" class="strain-form__input form-input">
-    </div>
+      <div class="strain-form__item form__field">
+        <label for="data_field" class="strain-form__label form-label">Дата получения</label>
+        <input id="data_field" type="text" class="strain-form__input form-input">
+      </div>
 
-    <div class="strain-form__item form__field">
-      <label for="index_field" class="strain-form__label form-label">Индекс штаммов</label>
-      <input id="index_field" type="text" class="strain-form__input form-input">
-    </div>
+      <div class="strain-form__item form__field">
+        <label for="index_field" class="strain-form__label form-label">Индекс штаммов</label>
+        <input id="index_field" type="text" class="strain-form__input form-input">
+      </div>
 
-    <div class="strain-form__item form__field">
-      <label for="source_field" class="strain-form__label form-label">Источник</label>
-      <input id="source_field" type="text" class="strain-form__input form-input">
+      <div class="strain-form__item form__field">
+        <label for="source_field" class="strain-form__label form-label">Источник</label>
+        <input id="source_field" type="text" class="strain-form__input form-input">
+      </div>
     </div>
-
 
     <div class="strain-form__properties properties">
+
       <div class="property">
         <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_1" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_1" type="text" class="strain-form__input form-input">
+        <div class="property__group">
+          <div class="property__info">
+            <div class="strain-form__item form__field">
+              <label for="parameter_1" class="strain-form__label form-label">Параметр 1</label>
+              <input id="parameter_1" type="text" class="strain-form__input form-input">
+            </div>
+            <div class="strain-form__item form__field">
+              <label for="parameter_224" class="strain-form__label form-label">Параметр 2</label>
+              <input id="parameter_224" type="text" class="strain-form__input form-input">
+            </div>
+          </div>
+          <div class="property__buttons-block">
+            <button class="property__delete-button delete-button">-</button>
+            <button class="property__add-button add-button">+</button>
+          </div>
         </div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_224" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_224" type="text" class="strain-form__input form-input">
-        </div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_244" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_244" type="text" class="strain-form__input form-input">
+        <div class="property__group">
+          <div class="property__info">
+            <div class="strain-form__item form__field">
+              <label for="parameter_224" class="strain-form__label form-label">Параметр 3</label>
+              <input id="parameter_224" type="text" class="strain-form__input form-input">
+            </div>
+          </div>
+          <div class="property__buttons-block">
+            <button class="property__delete-button delete-button">-</button>
+            <button class="property__add-button add-button">+</button>
+          </div>
         </div>
       </div>
 
       <div class="property">
         <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_11" class="strain-form__label form-label">Параметр</label>
-          <input name="" id="parameter_11" type="text" class="strain-form__input form-input">
+        <div class="property__group">
+          <div class="property__info">
+            <div class="strain-form__item form__field">
+              <label for="parameter_1" class="strain-form__label form-label">Параметр 1</label>
+              <input id="parameter_1" type="text" class="strain-form__input form-input">
+            </div>
+            <div class="strain-form__item form__field">
+              <label for="parameter_224" class="strain-form__label form-label">Параметр 2</label>
+              <input id="parameter_224" type="text" class="strain-form__input form-input">
+            </div>
+          </div>
+          <div class="property__buttons-block">
+            <button class="property__delete-button delete-button">-</button>
+            <button class="property__add-button add-button">+</button>
+          </div>
         </div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_22" class="strain-form__label form-label">Параметр</label>
-          <input name="" id="parameter_22" type="text" class="strain-form__input form-input">
-        </div>
-      </div>
-
-      <div class="property">
-        <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_14" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_14" type="text" class="strain-form__input form-input">
-        </div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_24" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_24" type="text" class="strain-form__input form-input">
-        </div>
-      </div>
-
-      <div class="property">
-        <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_15" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_15" type="text" class="strain-form__input form-input">
-        </div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_26" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_26" type="text" class="strain-form__input form-input">
+        <div class="property__group">
+          <div class="property__info">
+            <div class="strain-form__item form__field">
+              <label for="parameter_224" class="strain-form__label form-label">Параметр 3</label>
+              <input id="parameter_224" type="text" class="strain-form__input form-input">
+            </div>
+          </div>
+          <div class="property__buttons-block">
+            <button class="property__delete-button delete-button">-</button>
+            <button class="property__add-button add-button">+</button>
+          </div>
         </div>
       </div>
 
       <div class="property">
         <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_17" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_17" type="text" class="strain-form__input form-input">
+        <div class="property__group">
+          <div class="property__info">
+            <div class="strain-form__item form__field">
+              <label for="parameter_1" class="strain-form__label form-label">Параметр 1</label>
+              <input id="parameter_1" type="text" class="strain-form__input form-input">
+            </div>
+            <div class="strain-form__item form__field">
+              <label for="parameter_224" class="strain-form__label form-label">Параметр 2</label>
+              <input id="parameter_224" type="text" class="strain-form__input form-input">
+            </div>
+          </div>
+          <div class="property__buttons-block">
+            <button class="property__delete-button delete-button">-</button>
+            <button class="property__add-button add-button">+</button>
+          </div>
         </div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_27" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_27" type="text" class="strain-form__input form-input">
+        <div class="property__group">
+          <div class="property__info">
+            <div class="strain-form__item form__field">
+              <label for="parameter_224" class="strain-form__label form-label">Параметр 1</label>
+              <input id="parameter_224" type="text" class="strain-form__input form-input">
+            </div>
+            <div class="strain-form__item form__field">
+              <label for="parameter_224" class="strain-form__label form-label">Параметр 2</label>
+              <input id="parameter_224" type="text" class="strain-form__input form-input">
+            </div>
+          </div>
+          <div class="property__buttons-block">
+            <button class="property__delete-button delete-button">-</button>
+          </div>
         </div>
+        <div class="property__group">
+          <div class="property__info">
+            <div class="strain-form__item form__field">
+              <label for="parameter_224" class="strain-form__label form-label">Параметр 1</label>
+              <input id="parameter_224" type="text" class="strain-form__input form-input">
+            </div>
+          </div>
+          <div class="property__buttons-block">
+            <button class="property__add-button add-button">+</button>
+          </div>
+        </div>
+
+
       </div>
 
-      <div class="property">
-        <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_133" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_133" type="text" class="strain-form__input form-input">
-        </div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_233" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_233" type="text" class="strain-form__input form-input">
-        </div>
-      </div>
 
-      <div class="property">
-        <div class="property__title"><span>Рост в лакмусовом молоке:</span></div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_13" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_13" type="text" class="strain-form__input form-input">
-        </div>
-        <div class="strain-form__item form__field">
-          <label for="parameter_23" class="strain-form__label form-label">Параметр</label>
-          <input id="parameter_23" type="text" class="strain-form__input form-input">
-        </div>
-      </div>
     </div>
 
 
