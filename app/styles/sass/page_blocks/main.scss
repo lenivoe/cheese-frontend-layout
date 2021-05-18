@@ -7,10 +7,13 @@
 
 .main-content{
   &__menu{
-    width: 33%;
+    position: fixed;
+    z-index: 1000;
+    width: 280px;
   }
 
   &__data{
+    position: relative;
     padding-top: 30px;
     min-height: 93vh;
     width: 100%;
