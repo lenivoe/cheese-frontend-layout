@@ -1,22 +1,32 @@
 <div class="strain-adding">
   <form action="" class="strain-form form--position-block-center">
     <div class="strain-form__general-info">
-      <div class="strain-form__item form__field">
-        <label for="gen-type_field" class="strain-form__label form-label">Род</label>
-        <select id="gen-type_field" class="strain-form__input form-input">
-          <option value="1">Пункт 1</option>
-          <option value="2">Пункт 2</option>
-          <option value="3">Пункт 3</option>
-        </select>
+      <div class="strain-form__base-field base-field">
+        <div class="strain-form__item form__field">
+          <label for="gen-type_field" class="strain-form__label form-label">Род</label>
+          <select id="gen-type_field" class="strain-form__input form-input">
+            <option value="1">Пункт 1</option>
+            <option value="2">Пункт 2</option>
+            <option value="3">Пункт 3</option>
+          </select>
+        </div>
+        <div class="base-field__buttons-block">
+          <a href="#iw-modal-1" class="iw-modal-btn base-field__add-button add-button">+</a>
+        </div>
       </div>
 
-      <div class="strain-form__item form__field">
-        <label for="bergey-type_field" class="strain-form__label form-label">Вид</label>
-        <select id="bergey-type_field" class="strain-form__input form-input">
-          <option value="1">Пункт 1</option>
-          <option value="2">Пункт 2</option>
-          <option value="3">Пункт 3</option>
-        </select>
+      <div class="strain-form__base-field base-field">
+        <div class="strain-form__item form__field">
+          <label for="bergey-type_field" class="strain-form__label form-label">Вид</label>
+          <select id="bergey-type_field" class="strain-form__input form-input">
+            <option value="1">Пункт 1</option>
+            <option value="2">Пункт 2</option>
+            <option value="3">Пункт 3</option>
+          </select>
+        </div>
+        <div class="base-field__buttons-block">
+          <a href="#iw-modal-2" class="iw-modal-btn base-field__add-button add-button">+</a>
+        </div>
       </div>
 
       <div class="strain-form__item form__field">
@@ -179,3 +189,49 @@
     <button type="button" class="form-buttons__cancel-button form-button cancel-button">Отменить</button>
   </div>
 </div>
+
+<div id="iw-modal-1" class="iw-modal">
+  <div class="iw-modal-wrapper">
+    <div class="iw-CSS-modal-inner">
+      <div class="iw-modal-header">
+        <h3 class="iw-modal-title">Добавление рода</h3>
+      </div>
+      <div class="iw-modal-text">
+        <form class="add-main-field-form" action="">
+          <div class="main-field">
+            <label for="gen-type">Наименование</label>
+            <input type="text" class="main-field__input" id="gen-type" name="gen-type" value="123">
+          </div>
+          <div class="main-field__buttons">
+            <button type="submit" class="main-field__button add-button">Добавить</button>
+            <a href="#close" title="Закрыть" class="cancel-button">Отмена</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="iw-modal-2" class="iw-modal">
+  <div class="iw-modal-wrapper">
+    <div class="iw-CSS-modal-inner">
+      <div class="iw-modal-header">
+        <h3 class="iw-modal-title">Добавление Вида</h3>
+      </div>
+      <div class="iw-modal-text">
+        <form class="add-main-field-form" action="">
+          <div class="main-field">
+            <label for="bergey-type">Наименование</label>
+            <input type="text" class="main-field__input" id="bergey-type" name="gen-type" value="123">
+          </div>
+          <div class="main-field__buttons">
+            <button type="submit" class="main-field__button add-button">Добавить</button>
+            <a href="#close" title="Закрыть" class="cancel-button">Отмена</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
