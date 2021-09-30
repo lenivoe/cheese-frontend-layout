@@ -5,6 +5,9 @@
 	"main": "index.js",
 	"author": "WebDesign Master",
 	"license": "ISC",
+  "scripts": {
+    "start": "set PORT=4000&&set UIPORT=4001&&gulp"
+  },
 	"devDependencies": {
 		"@babel/core": "^7.13.14",
 		"@babel/preset-env": "^7.13.12",

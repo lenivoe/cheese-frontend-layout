@@ -22,15 +22,19 @@ const del          = require('del')
 
 function browsersync() {
 	browserSync.init({
-		server: {
-			baseDir: 'app/',
-			middleware: bssi({ baseDir: 'app/', ext: '.html' })
-		},
-		ghostMode: { clicks: false },
-		notify: false,
-		online: true,
-		// tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
-	})
+    server: {
+      baseDir: 'app/',
+      middleware: bssi({ baseDir: 'app/', ext: '.html' }),
+    },
+    ghostMode: { clicks: false },
+    notify: false,
+    online: true,
+    ui: {
+      port: process.env.UIPORT || (process.env.PORT || 3000) + 1,
+    },
+    port: process.env.PORT || 3000,
+    // tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
+  });
 }
 
 function scripts() {
